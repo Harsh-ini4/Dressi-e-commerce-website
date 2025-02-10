@@ -1,0 +1,83 @@
+
+body{
+  font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+justify-content: center; /* Centers the content horizontally */
+align-items: center; /* Centers the content vertically */
+height: 100vh; /* Full viewport height */
+flex-direction: column;
+}
+.card{
+  width:200px;
+  height:500px;
+  background-color: #fff;
+  margin-top: 10px;
+  margin-left: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.card-container {
+  display: flex;
+  gap: 0px; 
+  overflow-x: auto; 
+  padding: 0px;
+  flex-wrap: nowrap; 
+}
+.card-img-top{
+  width:200px;
+  height: 250px;
+  margin-top: 10px;
+}
+card-body {
+  padding: 10px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.button-image-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+.collect {
+  width:28px;
+  height:28px;
+  cursor: pointer;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.cart-item{
+  display: inline-block;
+  width: 120px;
+  padding: 10px 15px;
+  background-color:red;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: 2px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
