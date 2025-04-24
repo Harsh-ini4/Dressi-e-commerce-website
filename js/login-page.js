@@ -9,6 +9,6 @@ document.getElementById("login-button").onclick = function () {
      localStorage.setItem("username", username);
 
     // Redirect to welcome page
-    window.location.href = "welcome-page.html";
+    window.location.href = "html/welcome-page.html";
   }
 };
