@@ -1,16 +1,14 @@
-document.getElementById("login-button").addEventListener("click", function () {
-    // Get the username and password values
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
+document.getElementById("login-button").onclick = function () {
+  const username = document.getElementById("username").value.trim();
+  const password = document.getElementById("password").value.trim();
 
-    // Simple validation example
-    if (password === "dressi") {
-         // Save username in localStorage
-         localStorage.setItem("username", username);
-        // Redirect to a new page if login is successful
-        window.location.href = "welcome page.html"; // Replace with your desired page
-    } else {
-        document.getElementById("message").style.color = "red";
-        document.getElementById("message").textContent = "Invalid password!";
-    }
-});
+  if (username === "" || password === "") {
+    alert("Please fill in all details!");
+  } else {
+     // Store the username
+     localStorage.setItem("username", username);
+
+    // Redirect to welcome page
+    window.location.href = "../E-commerce website/html/welcome page.html";
+  }
+};
