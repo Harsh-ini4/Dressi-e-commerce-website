@@ -9,5 +9,5 @@
 
         document.getElementById("login-button").addEventListener("click", function () {
             // Redirect to another page
-            window.location.href = "main page.html"; // Replace with your desired page
+            window.location.href = "main-page.html"; // Replace with your desired page
         });
